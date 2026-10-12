@@ -16,3 +16,5 @@ footer{border-top:1px solid var(--line);text-align:center;padding:24px 16px;colo
 footer a{margin:0 10px}
 .doc main{padding-top:56px}
 .doc h1{font-size:clamp(32px,6vw,46px)}
+.yt{max-width:760px;margin:0 auto 14px;color:#c9d8df}
+.yt strong{color:var(--ink)}
