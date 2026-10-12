@@ -18,3 +18,10 @@ footer a{margin:0 10px}
 .doc h1{font-size:clamp(32px,6vw,46px)}
 .yt{max-width:760px;margin:0 auto 14px;color:#c9d8df}
 .yt strong{color:var(--ink)}
+@media print{
+  body{background:#fff;color:#111}
+  p,li,.yt,footer,.tag{color:#222!important}
+  a{color:#0b57d0}
+  .pt,footer{border-color:#ccc}
+  .doc main{padding-top:0}
+}
