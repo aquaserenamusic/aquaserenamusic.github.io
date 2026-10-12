@@ -2,7 +2,7 @@
 *{box-sizing:border-box}
 body{margin:0;overflow-wrap:break-word;background:var(--bg);color:var(--ink);font:17px/1.65 "Poppins",system-ui,-apple-system,Segoe UI,Roboto,sans-serif}
 a{color:var(--accent)}
-.hero{min-height:70vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:48px 16px;background:linear-gradient(180deg,rgba(6,16,29,.15),rgba(6,16,29,.85)),url(hero.jpg) center/cover no-repeat}
+.hero{min-height:min(70vh,620px);display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:48px 16px;background:linear-gradient(180deg,rgba(6,16,29,.15),rgba(6,16,29,.85)),url(hero.jpg) center/cover no-repeat}
 .hero img{width:96px;height:96px;border-radius:50%;box-shadow:0 0 40px rgba(244,236,216,.25)}
 h1{font-family:"Lora",Georgia,serif;font-weight:600;font-size:clamp(40px,8vw,72px);margin:18px 0 4px;letter-spacing:.01em}
 .tag{color:var(--muted);margin:0 0 28px}
@@ -20,8 +20,10 @@ footer a{margin:0 10px}
 .yt strong{color:var(--ink)}
 @media print{
   body{background:#fff;color:#111}
-  p,li,.yt,footer,.tag{color:#222!important}
+  p,li,.yt,footer,.tag,.yt strong{color:#222!important}
   a{color:#0b57d0}
   .pt,footer{border-color:#ccc}
   .doc main{padding-top:0}
 }
+.legal{margin:22px 0 0;font-size:15px}
+.legal a{color:var(--accent)}
